@@ -8,7 +8,7 @@ def main():
         num_count = int(input())
         print("Enter the number you want the Superduper counter to count by below:")
         num_step = int(input())
-
+        today = datetime.now()
         print("Day: ", today.day)
         print("Month: ", today.month)
         print("Year: ", today.year)
