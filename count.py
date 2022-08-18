@@ -4,9 +4,9 @@ from datetime import datetime
 def intro():
     print("Hello.\n Welcome to the... \n (drumroll please!) \n ***drumroll*** \n Superduper counter!")
 def main():
-    try:
-        intro()
-        while True:
+    intro()
+    while True:
+        try:
             print("Enter the number you want the Superduper counter to count to to below:")
             num_count = int(input())
             print("Enter the number you want the Superduper counter to count by below:")
@@ -27,6 +27,6 @@ def main():
             print("Hour: ", today.hour)
             print("Minute: ", today.minute)
             print("Second: ", today.second)
-    except:
-        print("Exception!")
+        except:
+            print("Exception!")
 main()
